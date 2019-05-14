@@ -14,6 +14,28 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+// function pyramid(n) {
+//     let space;
+//     let hash;
+//     let step;
+
+//     for (let i=0; i<n; i++){
+//         space = n - i - 1;
+//         hash = 2*i + 1;
+//         step = " ".repeat(space) + "#".repeat(hash) + " ".repeat(space);
+//         console.log(step);
+//     }
+// }
+
+function pyramid(n) {
+    let space;
+    let hash;
+
+    for (let i=0; i<n; i++) {
+        hash = 2*i + 1
+        space = n - i + 1;
+        console.log(" "*space + "#"*hash + ""*space);
+    }
+}
 
 module.exports = pyramid;
